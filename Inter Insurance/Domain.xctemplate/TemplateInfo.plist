@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DefaultCompletionName</key>
+	<string>Domain Files</string>
+	<key>Description</key>
+	<string>Gerar arquivos para a camada de Domain</string>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>O nome do módulos para usar como prefixo dos arquivos</string>
+			<key>Identifier</key>
+			<string>moduleName</string>
+			<key>Name</key>
+			<string>Nome do Módulo</string>
+			<key>NotPersisted</key>
+			<true/>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ServiceProtocol</string>
+			<key>Description</key>
+			<string>O nome do arquivo do Protocolo de Serviço</string>
+			<key>Identifier</key>
+			<string>serviceProtocolName</string>
+			<key>Name</key>
+			<string>ServiceProtocol Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ServiceUseCaseProtocol</string>
+			<key>Description</key>
+			<string>O nome do Protocolo de UseCase de serviço</string>
+			<key>Identifier</key>
+			<string>serviceUseCaseProtocolName</string>
+			<key>Name</key>
+			<string>ServiceUseCaseProtocol Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ServiceUseCase</string>
+			<key>Description</key>
+			<string>Nome do ServiceUseCase</string>
+			<key>Identifier</key>
+			<string>serviceUseCaseName</string>
+			<key>Name</key>
+			<string>ServiceUseCase Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___RequestType</string>
+			<key>Description</key>
+			<string>Enum com tipos de request para o UseCase</string>
+			<key>Identifier</key>
+			<string>requestTypeName</string>
+			<key>Name</key>
+			<string>RequestType Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Response</string>
+			<key>Description</key>
+			<string>Model Response Codable for request</string>
+			<key>Identifier</key>
+			<string>codableName</string>
+			<key>Name</key>
+			<string>Codable File Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Events</string>
+			<key>Description</key>
+			<string>Nome Enum de eventos para tagueamento</string>
+			<key>Identifier</key>
+			<string>eventsName</string>
+			<key>Name</key>
+			<string>EnumEvents Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+	</array>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+	</array>
+	<key>SortOrder</key>
+	<string>0</string>
+	<key>Summary</key>
+	<string>Template criado por Alexandre Robaert para Tribo de Seguros</string>
+</dict>
+</plist>
